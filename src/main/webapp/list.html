@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文件列表</title>
+    <script type="application/javascript" src="js/file_list.js" charset="UTF-8"></script>
+    <script type="application/javascript" src="js/fileOperation.js" charset="UTF-8"></script>
+    <script type="application/javascript" src="dist/utils.js" charset="UTF-8"></script>
+    <link href="css/http_cdn.staticfile.org_twitter-bootstrap_3.3.7_css_bootstrap.css" rel="stylesheet">
+    <script src="js/http_cdn.staticfile.org_jquery_2.1.1_jquery.js"></script>
+    <script src="js/http_cdn.staticfile.org_twitter-bootstrap_3.3.7_js_bootstrap.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href='http://cdn.repository.webfont.com/webfonts/nomal/152162/19673/6484850f6f50f60bfce8916e.css'
+          rel='stylesheet' type='text/css'/>
+</head>
+<body>
+<div id="head-bar">
+    <img src="img/logo.png" alt="logo" style="margin-left: 5px;">
+    <div>
+        <a id="brand" href="#">轻量级文件防护系统</a>
+    </div>
+    <div id="button-group">
+        <button type="button" id="user-button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+            1147042405@qq.com <span class="caret"></span>
+        </button>
+        <ul id="drop-menu" class="dropdown-menu dropdown-menu-right">
+            <!--            <li><a href="#">1147042405@qq.com</a></li>-->
+            <!--            <li role="separator" class="divider"></li>-->
+            <li><a href="./index.html">退出登录</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container" style="margin-top: 5%">
+    <h2 id="list-title">文件列表</h2>
+    <div class="container">
+        <div class="pull-right">
+            <form role="form" class="form-inline" name="fileForm" onsubmit="return false;" enctype="multipart/form-data"
+                  method="post">
+                <div class="form-group" style="display: none">
+                    <label class="sr-only" for="file">上传文件</label>
+                    <input type="file" id="file" name="file">
+                </div>
+                <button type="button" id="upload-button-1" class="btn btn-success btn-sm" onclick="document.getElementById('file').click()">
+                    上传文件
+                </button>
+                <button type="button" id="upload-button-2" class="btn btn-success btn-sm" onclick="doUpload()">提交</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table id="file_list" class="table table-hover">
+
+        </table>
+    </div>
+</div>
+</body>
+</html>

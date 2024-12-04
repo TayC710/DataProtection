@@ -1,0 +1,8 @@
+import { PublicKeyCredentialWithClientExtensionResults } from "../basic/json";
+import { CredentialCreationOptionsExtendedJSON, CredentialRequestOptionsExtendedJSON, PublicKeyCredentialWithAssertionExtendedResultsJSON, PublicKeyCredentialWithAttestationExtendedResultsJSON } from "./json";
+export declare function createExtendedRequestFromJSON(requestJSON: CredentialCreationOptionsExtendedJSON): CredentialCreationOptions;
+export declare function createExtendedResponseToJSON(credential: PublicKeyCredentialWithClientExtensionResults): PublicKeyCredentialWithAttestationExtendedResultsJSON;
+export declare function createExtended(requestJSON: CredentialCreationOptionsExtendedJSON): Promise<PublicKeyCredentialWithAttestationExtendedResultsJSON>;
+export declare function getExtendedRequestFromJSON(requestJSON: CredentialRequestOptionsExtendedJSON): CredentialRequestOptions;
+export declare function getExtendedResponseToJSON(credential: PublicKeyCredentialWithClientExtensionResults): PublicKeyCredentialWithAssertionExtendedResultsJSON;
+export declare function getExtended(requestJSON: CredentialRequestOptionsExtendedJSON): Promise<PublicKeyCredentialWithAssertionExtendedResultsJSON>;
