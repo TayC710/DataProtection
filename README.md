@@ -40,7 +40,7 @@
 | bcprov-jdk18on| org.bouncycastle| 1.72|
 
  （2）运行OpaqueServer.java文件<br/>
-（3）使用maven的tomcat插件中的run功能启动项目<br/>
+（3）使用marven的tomcat插件中的run功能启动项目<br/>
  （4）访问localhost:80<br/>
 
 
