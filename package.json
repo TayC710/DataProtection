@@ -1,0 +1,31 @@
+{
+  "name": "ciscn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/main/webapp/js/register.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YiDa858/ciscn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YiDa858/ciscn/issues"
+  },
+  "homepage": "https://github.com/YiDa858/ciscn#readme",
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "webpack": "^5.78.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "@github/webauthn-json": "^2.1.1",
+    "crypto-js": "^4.1.1"
+  }
+}

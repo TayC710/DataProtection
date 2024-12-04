@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/web2020.iml" filepath="$PROJECT_DIR$/.idea/web2020.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ciscn.iml" filepath="$PROJECT_DIR$/ciscn.iml" />
     </modules>
   </component>
 </project>

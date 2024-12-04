@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <script type="text/javascript" src="dist/utils.js"></script>
+    <script type="text/javascript" src="js/sendVerificationCode.js"></script>
+    <script src="js/http_cdn.jsdelivr.net_npm_axios_dist_axios.js"></script>
+    <script src="js/http_cdn.staticfile.org_jquery_2.1.1_jquery.js"></script>
+    <script src="js/http_cdn.staticfile.org_twitter-bootstrap_3.3.7_js_bootstrap.js"></script>
+    <link href="css/http_cdn.staticfile.org_twitter-bootstrap_3.3.7_css_bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='http://cdn.repository.webfont.com/webfonts/nomal/152162/19673/6484850f6f50f60bfce8916e.css' rel='stylesheet' type='text/css' />
+</head>
+<body>
+<div id="head-bar">
+    <img src="img/logo.png" alt="logo" style="margin-left: 5px;">
+    <div>
+        <a id="brand" href="#">轻量级文件防护系统</a>
+    </div>
+</div>
+
+<div id="main-div">
+    <h1 id="login-header">登录</h1>
+    <form name="LoginForm" onsubmit="return false" method="post">
+        <div id="upper-div">
+            <label class="form-label" id="form-label">
+                <p id="email-title">邮箱</p>
+                <input id="login-email-input" type="email" class="form-control" name="username" placeholder="请输入邮箱"
+                       required="required">
+            </label>
+        </div>
+        <div id="lower-div">
+            <button type="button" id="login-button" class="btn btn-primary" style="width: 150px" onclick="doAuth()">
+                登录
+            </button>
+            <p style="font-size: 8px; font-family:'jdzhonyuanjian374ad10cec25262'">没有账号?去<a href="./register.html">注册</a></p>
+        </div>
+    </form>
+</div>
+
+<!--<div class="container">-->
+<!--    <div class="row">-->
+<!--        <div class="col-sm-4"></div>-->
+<!--        <div class="col-md-4 jumbotron">-->
+<!--            <h1>登录</h1>-->
+<!--            </br>-->
+<!--            <form name="LoginForm" onsubmit="return false" method="post">-->
+<!--                <div class="mb-4">-->
+<!--                    <label class="form-label">-->
+<!--                        <p id="email-title">邮箱</p>-->
+<!--                        <input id="email-input" type="text" class="form-control" name="username" placeholder="请输入邮箱"-->
+<!--                               required="required">-->
+<!--                    </label>-->
+<!--                </div>-->
+<!--                <div style="margin: 10px; justify-content: center">-->
+<!--                    <button type="button" class="btn btn-primary" style="width: 150px" onclick="doAuth()">登录</button>-->
+<!--                    <p style="font-size: 8px;">没有账号?去<a href="./register.html">注册</a></p>-->
+<!--                </div>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--        <div class="col-md-4"></div>-->
+<!--    </div>-->
+<!--</div>-->
+</body>
+</html>

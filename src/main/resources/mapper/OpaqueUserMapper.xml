@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.OpaqueUserMapper">
+    <resultMap id="opaqueUserResultMap" type="pojo.OpaqueUser">
+        <result property="clientIdentity" column="client_identity" jdbcType="BLOB"/>
+        <result property="password" column="password" jdbcType="BLOB"/>
+        <result property="serverIdentity" column="server_identity" jdbcType="BLOB"/>
+        <result property="blind" column="blind" jdbcType="BLOB"/>
+        <result property="nonce" column="nonce" jdbcType="BLOB"/>
+        <result property="clientPublicKey" column="clientPublicKey" jdbcType="BLOB"/>
+        <result property="clientPrivateKey" column="clientPrivateKey" jdbcType="BLOB"/>
+    </resultMap>
+
+    <insert id="insertNewUser">
+        INSERT
+        INTO opaqueuser (userId, client_identity, password, server_identity, blind, nonce, clientPublicKey,
+        clientPrivateKey)
+        VALUES (#{userId}, #{clientIdentity}, #{password}, #{serverIdentity}, #{blind}, #{nonce}, #{clientPublicKey},
+        #{clientPrivateKey});
+    </insert>
+    <delete id="deleteByUserId">
+        DELETE FROM opaqueuser WHERE userId = #{userId};
+    </delete>
+
+    <select id="selectOpaqueUserByUserId" resultMap="opaqueUserResultMap">
+        SELECT *
+        FROM opaqueuser
+        WHERE userId = #{userId};
+    </select>
+
+    <select id="selectOpaqueUserByClientIdentity" resultMap="opaqueUserResultMap">
+        SELECT *
+        FROM opaqueuser
+        WHERE client_identity = #{clientIdentity};
+    </select>
+</mapper>
