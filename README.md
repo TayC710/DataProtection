@@ -30,7 +30,7 @@
 ```
  （2）启动项目
  ```
- python main.py
+ python main.py  
 ```
 （3）打开前端界面 <br/>
 访问http://127.0.0.1:5000/<br/>
