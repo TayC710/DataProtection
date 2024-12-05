@@ -17,7 +17,7 @@
 本方案采取的系统架构中的模块间耦合性较低，可以在将来使用更加安全可靠的身份认证技术等对本方案中的相应模块进行升级替换，以保证安全的可靠性、持久性。
 
 ### 1.2 安装步骤
-（1）安装marven依赖
+（1）安装maven依赖
 | 依赖   | 提供方 | 版本   |
 |:--------:|:--------:|:--------:|
 |mybatis   |  org.mybatis   | 3.5.8   |
@@ -40,7 +40,7 @@
 | bcprov-jdk18on| org.bouncycastle| 1.72|
 
  （2）运行OpaqueServer.java文件<br/>
-（3）使用marven的tomcat插件中的run功能启动项目<br/>
+（3）使用maven的tomcat插件中的run功能启动项目<br/>
  （4）访问localhost:80<br/>
 
 
